@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>반응형 해상도 실습기</title>
+    <link rel="stylesheet" href="style2.css" />
+    <script src="test.js" defer></script>
+    <!-- HTML 화면을 먼저 다 그린 뒤, 자바스크립트를 순서대로 실행하게 해주는 속성 -->
+  </head>
+  <body>
+    <h1>화면 해상도별 프로젝트 목록</h1>
+    <div class="viewport-buttons" aria-label="미리보기 화면 폭 선택">
+      <button
+        type="button"
+        data-width="360"
+        data-columns="1"
+        aria-pressed="true"
+      >
+        휴대전화 360px
+      </button>
+      <button
+        type="button"
+        data-width="768"
+        data-columns="2"
+        aria-pressed="false"
+      >
+        태블릿 768px
+      </button>
+      <button
+        type="button"
+        data-width="1024"
+        data-columns="3"
+        aria-pressed="false"
+      >
+        노트북 1024px
+      </button>
+      <button
+        type="button"
+        data-width="1440"
+        data-columns="4"
+        aria-pressed="false"
+      >
+        데스크톱 1440px
+      </button>
+    </div>
+    <p class="viewport-status" aria-live="polite">현재 360px · 예상 1열</p>
+    <div class="device-stage">
+      <iframe title="반응형 프로젝트 미리보기"></iframe>
+    </div>
+  </body>
+</html>
